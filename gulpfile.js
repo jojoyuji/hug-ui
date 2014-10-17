@@ -11,7 +11,7 @@ gulp.task('concat-js', function() {
 });
 
 gulp.task('concat-css', function() {
-  gulp.src('./src/**/*.css')
+  gulp.src(['./assets/icons/style.css', './src/**/*.css'])
     .pipe(concatCss('hug-ui.css'))
     .pipe(gulp.dest('./dist/'));
 });

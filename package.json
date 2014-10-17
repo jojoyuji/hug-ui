@@ -1,0 +1,39 @@
+{
+  "name": "hug-ui",
+  "description": "componentf hug",
+  "version": "0.0.1",
+  "homepage": "http://hugme.com.br",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jojoyuji/hug-ui/"
+  },
+  "author": {
+    "name": "Jojo Hashimoto",
+    "email": "jojoyuji@gmail.com",
+    "url": "http://jojoyuji.com/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-concat": "^2.4.1",
+    "gulp-concat-css": "^1.0.0"
+  },
+  "scripts": {},
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/gulpjs/gulp/master/LICENSE"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "fractal",
+      "email": "contact@wearefractal.com"
+    }
+  ],
+  "dist": {
+    "shasum": "0b0473e7cdfd04c785184513938397d4552cfe96",
+    "tarball": "http://registry.npmjs.org/gulp/-/gulp-3.8.8.tgz"
+  },
+  "directories": {}
+}

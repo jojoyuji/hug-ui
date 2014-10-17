@@ -1,0 +1,164 @@
+/*************
+ *  DEFAULT  *
+ *************/
+
+hug-speech > .talk hug-circle-avatar {
+  font-size: 100%;
+}
+
+hug-speech > .talk  hug-circle-avatar {
+  float: left;
+}
+
+hug-speech > .talk  dialog {
+  margin-left: 70px;
+}
+
+/*arrow*/
+
+hug-speech > .talk  dialog:before,
+hug-speech > .talk  dialog:after,
+ {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px;
+  z-index: 1;
+}
+
+hug-speech > .talk  dialog:before {
+  border-color: transparent rgba(0,0,0,0.1) transparent transparent;
+  top: 15px;
+  left: -20px;
+  bottom: auto;
+  right: auto;
+}
+
+hug-speech > .talk  dialog:after {
+  border-color: transparent #fff transparent transparent;
+  top: 14px;
+  left: -20px;
+  bottom: auto;
+  right: auto;
+}
+
+/*---     endDefault   ---*/
+
+/*******************************
+ *  hug-speech-layout="right"  *
+ *******************************/
+
+hug-speech[hug-speech-layout~="right"] > .talk  hug-circle-avatar {
+  float: right;
+}
+
+hug-speech[hug-speech-layout~="right"] > .talk  dialog {
+  margin-right: 70px;
+  margin-left: 0;
+}
+
+hug-speech[hug-speech-layout~="right"] > .talk  dialog:before {
+  border-color: transparent  transparent transparent rgba(0,0,0,0.1);
+  top: 15px;
+  right: -20px;
+  left: auto;
+  bottom: auto;
+}
+
+hug-speech[hug-speech-layout~="right"] > .talk  dialog:after {
+  border-color: transparent  transparent transparent #fff;
+  top: 14px;
+  right: -20px;
+  left: auto;
+  bottom: auto;
+}
+
+/*---     endLayoutRight   ---*/
+
+/*******************************
+ *  hug-speech-style="bordered"  *
+ *******************************/
+
+hug-speech[hug-speech-style~="bordered"] > .talk  dialog {
+  border: 2px solid #ccc;
+  box-shadow: none;
+}
+
+hug-speech[hug-speech-style~="bordered"] > .talk  dialog:before {
+  border-width: 11px;
+  border-color: transparent #ccc transparent transparent;
+  top: 13px;
+  left: -24px;
+  right: auto;
+  bottom: auto;
+}
+
+hug-speech[hug-speech-style~="bordered"][hug-speech-layout~="right"] > .talk  dialog:before {
+  border-width: 11px;
+  border-color: transparent  transparent transparent #ccc;
+  top: 13px;
+  right: -24px;
+  left: auto;
+  bottom: auto;
+}
+
+/*---     endStyleBordered   ---*/
+
+/*******************************
+ *  hug-speech-style="small"   *
+ *******************************/
+
+hug-speech[hug-speech-style~="small"] > .talk  hug-circle-avatar {
+  font-size: 70%;
+  margin-top: 5px;
+}
+
+hug-speech[hug-speech-style~="small"] > .talk dialog {
+  margin-left: 60px;
+}
+
+hug-speech[hug-speech-style~="small"][hug-speech-layout~="right"] > .talk dialog {
+  margin-left: 0px;
+  margin-right: 60px;
+}
+
+/*---     endStyleBordered   ---*/
+
+/*******************************
+ *  hug-speech-style="dark"   *
+ *******************************/
+
+hug-speech[hug-speech-style~="dark"] > .talk  dialog {
+  background: #666;
+  color: #fff;
+}
+
+hug-speech[hug-speech-style~="dark"] > .talk  dialog:after {
+  border-color: transparent #666 transparent transparent;
+}
+
+hug-speech[hug-speech-layout~="right"][hug-speech-style~="dark"] > .talk  dialog:after {
+  border-color: transparent  transparent transparent #666;
+}
+
+/*---     endStyleDark   ---*/
+
+/*******************************
+ *  hug-speech-style="light-green"   *
+ *******************************/
+
+hug-speech[hug-speech-style~="light-green"] > .talk  dialog {
+  background: #E6FFE7;
+}
+
+hug-speech[hug-speech-style~="light-green"] > .talk  dialog:after {
+  border-color: transparent #E6FFE7 transparent transparent;
+}
+
+hug-speech[hug-speech-layout~="right"][hug-speech-style~="light-green"] > .talk  dialog:after {
+  border-color: transparent  transparent transparent #E6FFE7;
+}
+
+/*---     endStyleDark   ---*/

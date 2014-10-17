@@ -1,0 +1,24 @@
+<div>
+  <h4>
+    Retweetar
+  </h4>
+  <form action="">
+    <fieldset class="joined">
+      <textarea  class="focus-first30" disabled="disabled" > RT: {{$config.twitter.retweet.message}}</textarea>
+    </fieldset>
+    <footer class="footer-form">
+      <div class="attachments">
+        <button type='button' class="icon">
+          <i class='icon-camera'></i>
+        </button>
+        <button type='button' class='icon'>
+          <i class='icon-location'></i>
+        </button>
+      </div>
+      <div class="buttons">
+        <button type="button" ng-click="$config.methods.retweet($config.id, $config.twitter.retweet.message, $event, index)" class='btn call2action'>retweetar</button>
+      </div>
+    </footer>
+  </form>
+</div>
+

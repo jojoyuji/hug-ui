@@ -1,0 +1,24 @@
+<div>
+  <h4>
+    Responder
+  </h4>
+  <form action="">
+    <fieldset class="joined">
+      <textarea ng-model="$config.twitter.reply.message" maxlength="140" ng-trim="false"  class="focus-first10"  placeholder="Responder..."></textarea>
+    </fieldset>
+    <footer class="footer-form">
+      <span class="total-chars" ng-class="{'warn':(140 - $config.twitter.reply.message.length) <= 20}">{{140 - $config.twitter.reply.message.length}}</span>
+      <div class="attachments">
+        <button type='button' class="icon">
+          <i class='icon-camera'></i>
+        </button>
+        <button type='button' class='icon'>
+          <i class='icon-location'></i>
+        </button>
+      </div>
+      <div class="buttons">
+        <button type="button" ng-click="$config.methods.reply($config.id, $config.twitter.reply.message, $event, index)" class='btn call2action'>enviar</button>
+      </div>
+    </footer>
+  </form>
+</div>

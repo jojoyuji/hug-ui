@@ -1,0 +1,24 @@
+<div ng-controller="FormController">
+  <h4>
+    Comentar no Facebook
+  </h4>
+  <form name="formFbComment">
+    <fieldset class="joined">
+      <textarea ng-model="$config.facebook.comment.message" name="" class="focus-first1" placeholder="comentário..."></textarea>
+    </fieldset>
+    <footer class="footer-form">
+      <div class="attachments">
+        <button type='button' class="icon">
+          <i class='icon-camera'></i>
+        </button>
+        <button type='button' class='icon'>
+          <i class='icon-location'></i>
+        </button>
+      </div>
+      <div class="buttons">
+        <button type="button" ng-click="$config.methods.comment( $config.id, $config.facebook.comment.message, $event, index)" class='btn call2action'>enviar</button>
+        <!--<button type="submit"  ng-click="performAsTiqt('facebook.comment', i.idFeed, message)"class='btn call2action'>responder como ticket</button>-->
+      </div>
+    </footer>
+  </form>
+</div>

@@ -1,0 +1,25 @@
+<div>
+  <h4>
+    Mensagem direta
+  </h4>
+  <form action="">
+    <fieldset class="joined">
+      <textarea id="" ng-model="$config.twitter.dm.message" maxlength="140" ng-class="{'warn':(140 - $config.twitter.dm.message.length) <= 20}" class="focus-first20" placeholder="Mensagem Direta..."></textarea>
+    </fieldset>
+    <footer class="footer-form">
+      <span class='total-chars' ng-class="{'warn':(140 - $config.twitter.dm.message.length) <= 20}">{{140 - $config.twitter.dm.message.length}}</span>
+      <div class="attachments">
+        <button type='button' class="icon">
+          <i class='icon-camera'></i>
+        </button>
+        <button type='button' class='icon'>
+          <i class='icon-location'></i>
+        </button>
+      </div>
+
+      <div class="buttons">
+        <button type="button" ng-click="$config.methods.dm($config.id, $config.twitter.dm.message, $event, index)" class='btn call2action'>enviar DM</button>
+      </div>
+    </footer>
+  </form>
+</div>

@@ -1,5 +1,5 @@
 angular
-  .module('hugUi', ['hugIcon', 'hugCircleIcon', 'hugCircleAvatar', 'hugAsyncAction', 'hugAlert'])
+  .module('hugUi', ['hugIcon', 'hugCircleIcon', 'hugCircleAvatar', 'hugAsyncAction', 'hugAlert', 'hugSpeech'])
   .factory('hugStyles', [function(){
       'use strict';
 
